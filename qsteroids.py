@@ -121,12 +121,12 @@ class CPPHeader:
         cpp_content = cpp_file.read()
         cpp_file.close()
         cpp_content += methods_implematation
-        new_cpp = open(self.__file_name.replace("hpp", "cpp_qsteroid"), "w+")
+        new_cpp = open(self.__file_name.replace("hpp", "cpp_qsteroided"), "w+")
         new_cpp.write(cpp_content)
         new_cpp.close()
 
     def create_new_hpp(self):
-        new_hpp = open(self.__file_name.replace("hpp", "hpp_qsteroid"), "w+")
+        new_hpp = open(self.__file_name.replace("hpp", "hpp_qsteroided"), "w+")
         new_hpp.write("".join(self.__file_lines))
         new_hpp.close()
         
@@ -165,7 +165,7 @@ if __name__ == "__main__":
     try:
         for source in os.listdir("./src"):
             if(source.endswith(".hpp")):
-                if os.path.exists(os.path.join(os.path.abspath("./src"),source + "_qsteroid")):
+                if os.path.exists(os.path.join(os.path.abspath("./src"),source + "_qsteroided")):
                      print "QSTEROID INFO: File already processed."
                 else:
                     target = CPPHeader(os.path.join(os.path.abspath("./src"),source)) 

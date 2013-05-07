@@ -3,8 +3,9 @@
 This a tool for providing improvements on code performances of Qt codes.
 
 ## Documentation
-Currently the this script can inject property code and the debbuging using the Other debugging techniques: <https://developer.blackberry.com/cascades/documentation/getting_started/tools/debugging.html>
-#### Q\_SETEROID\_PROPERTY(  _[Type]_ _[propertyName]_ ,  _[r]_ _[w]_ _[n]_ _[f]_  )
+Currently the this script can inject property code. We are implementing new features. As soon as possible it will be available.
+
+#### Q\_STEROID\_PROPERTY(  _[Type]_ _[propertyName]_ ,  _[r]_ _[w]_ _[n]_ _[f]_  )
 This command can be used for inject Q\_PROPERTY code.
 
 * **Type:** This field is the type of the property. You must to include manually the if it is not included yet;
@@ -21,7 +22,7 @@ This command can be used for inject Q\_PROPERTY code.
 Step by step how to use this:
 
 1. You have to download the script to the PATH_YOU_WANT;
-2. You need to add the follow command to the .pro file: ```system(c:\\Users\\rsarmentopeixoto\\Dev\\QSteroids\\qsteroids.py)```
+2. You need to add the follow command to the .pro file: ```system(PATH_YOU_CHOSE\qsteroids.py)```
 3. You need to add the Q_STEROID_PROPERTY at the hpp file. There is no specific location for this. This is visually better bellow the Q_OBJECT keyword; 
 4. Now you just need to build the project on momentics;
 5. After building, the generated code is named with the _qsteroided word;

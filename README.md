@@ -21,8 +21,8 @@ This command can be used for inject Q\_PROPERTY code.
 
 Step by step how to use this:
 
-1. You have to download the script to the PATH_YOU_WANT;
-2. You need to add the follow command to the .pro file: ```system(PATH_YOU_CHOSE\qsteroids.py)```
+1. You have to download the script to the PATH\_YOU\_WANT;
+2. You need to add the follow command to the .pro file: ```system(PATH\_YOU\_CHOSE\qsteroids.py)```
 3. You need to add the Q_STEROID_PROPERTY at the hpp file. There is no specific location for this. This is visually better bellow the Q_OBJECT keyword; 
 4. Now you just need to build the project on momentics;
 5. After building, the generated code is named with the _qsteroided word;
@@ -36,7 +36,7 @@ The signals, private, public slots need to be in the following sequence:
 * ```public slots:```
 * ```private:```
 
-##### Before the injection
+#### Before the injection
 This is the code before the injection. You only need to add the QSteroid properties and than run the script.
 
 **helloworld.hpp**
@@ -70,7 +70,7 @@ This is the code before the injection. You only need to add the QSteroid propert
 	HelloWorld::~HelloWorld() {
 	}
 
-##### After the injection
+#### After the injection
 
 **helloworld.hpp**
 

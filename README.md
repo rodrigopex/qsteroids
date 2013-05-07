@@ -4,7 +4,7 @@ This a tool for providing improvements on code performances of Qt codes.
 
 ## Documentation
 Currently the this script can inject property code and the debbuging using the Other debugging techniques: <https://developer.blackberry.com/cascades/documentation/getting_started/tools/debugging.html>
-#### Q\_SETEROID\_PROPERTY(  _[Type]_ _[propertyName]_ ,  _[r]__[w]__[n]__[f]_  )
+#### Q\_SETEROID\_PROPERTY(  _[Type]_ _[propertyName]_ ,  _[r]_ _[w]_ _[n]_ _[f]_  )
 This command can be used for inject Q\_PROPERTY code.
 
 * **Type:** This field is the type of the property. You must to include manually the if it is not included yet;

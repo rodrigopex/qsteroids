@@ -5,7 +5,7 @@ This a tool for providing improvements on code performances of Qt codes.
 ## Documentation
 Currently the this script can inject property code. We are implementing new features. As soon as possible it will be available.
 
-#### Q\_STEROID\_PROPERTY(  _[Type]_ _[propertyName]_ ,  _[r]_ _[w]_ _[n]_ _[f]_  )
+#### Q\_STEROID\_PROPERTY(  _Type_ _propertyName_ ,  _[r]_ _[w]_ _[n]_ _[f]_  )
 This command can be used for inject Q\_PROPERTY code.
 
 * **Type:** This field is the type of the property. You must to include manually the if it is not included yet;

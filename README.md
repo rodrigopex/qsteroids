@@ -1,6 +1,6 @@
 # QSteroids
 
-This a tool for providing improvements on code performances of Qt codes.
+This a tool for providing improvements on code performances of Qt codes. This tools is still in the unstable. We need to do more tests. The using of this tools is your own risk.
 
 ## Documentation
 Currently the this script can inject property code. We are implementing new features. As soon as possible it will be available.
@@ -22,7 +22,7 @@ This command can be used for inject Q\_PROPERTY code.
 Step by step how to use this:
 
 1. You have to download the script to the PATH\_YOU\_WANT;
-2. You need to add the follow command to the .pro file: ```system(PATH\_YOU\_CHOSE\qsteroids.py)```
+2. You need to add the follow command to the .pro file: ```system(PATH_YOU_CHOSE\qsteroids.py)```
 3. You need to add the Q_STEROID_PROPERTY at the hpp file. There is no specific location for this. This is visually better bellow the Q_OBJECT keyword; 
 4. Now you just need to build the project on momentics;
 5. After building, the generated code is named with the _qsteroided word;

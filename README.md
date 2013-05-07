@@ -1,6 +1,6 @@
 # QSteroids
 
-This a tool for providing improvements on code performances of Qt codes. This tools is still in the unstable. We need to do more tests. The using of this tools is your own risk.
+This a tool for providing improvements on code performances of Qt codes.
 
 ## Documentation
 Currently the this script can inject property code. We are implementing new features. As soon as possible it will be available.
@@ -35,6 +35,8 @@ The signals, private, public slots need to be in the following sequence:
 * ```signals:```
 * ```public slots:```
 * ```private:```
+
+This tool is unstable. We need to do more tests. The using of this tools is your own risk.
 
 #### Before the injection
 This is the code before the injection. You only need to add the QSteroid properties and than run the script.

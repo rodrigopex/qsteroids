@@ -20,13 +20,13 @@ This command can be used for inject Q\_PROPERTY code.
 
 Step by step how to use this:
 
-* You have to download the script to the PATH_YOU_WANT;
-1. You need to add the follow command to the .pro file: ```system(c:\\Users\\rsarmentopeixoto\\Dev\\QSteroids\\qsteroids.py)```
-2. You need to add the Q_STEROID_PROPERTY at the hpp file. There is no specific location for this. This is visually better bellow the Q_OBJECT keyword; 
-3. Now you just need to build the project on momentics;
-4. After building, the generated code is named with the _qsteroided word;
-5. Check the new file. If it is correct, delete the original and then remove the _qsteroided from the file name;
-6. If you need to rerun the generation you need to remove the _qsteroided file. 
+1. You have to download the script to the PATH_YOU_WANT;
+2. You need to add the follow command to the .pro file: ```system(c:\\Users\\rsarmentopeixoto\\Dev\\QSteroids\\qsteroids.py)```
+3. You need to add the Q_STEROID_PROPERTY at the hpp file. There is no specific location for this. This is visually better bellow the Q_OBJECT keyword; 
+4. Now you just need to build the project on momentics;
+5. After building, the generated code is named with the _qsteroided word;
+6. Check the new file. If it is correct, delete the original and then remove the _qsteroided from the file name;
+7. If you need to rerun the generation you need to remove the _qsteroided file. 
 
 ### Known limitations
 The signals, private, public slots need to be in the following sequence:

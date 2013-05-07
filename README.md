@@ -115,7 +115,7 @@ This is the code before the injection. You only need to add the QSteroid propert
 
 **helloworld.cpp**
 
-	#include "HelloWorld.h"
+	#include "HelloWorld.hpp"
 	HelloWorld::HelloWorld() {
 	}
 
@@ -126,34 +126,39 @@ This is the code before the injection. You only need to add the QSteroid propert
 		return m_name;
 	}
 	void HelloWorld::setName(QString newName){
-		if(m_name != newName)
+		if(m_name != newName) {
 			m_name = newName;
 			emit nameChanged();
+		}
 	}
 	bb::cascades::GroupDataModel * HelloWorld::gmodel() {
 		return m_gmodel;
 	}
 	void HelloWorld::setGmodel(bb::cascades::GroupDataModel * newGmodel){
-		if(m_gmodel != newGmodel)
+		if(m_gmodel != newGmodel) {
 			m_gmodel = newGmodel;
 			emit gmodelChanged();
+		}
 	}
 	int HelloWorld::a() {
 		return m_a;
 	}
 	void HelloWorld::setA(int newA){
-		if(m_a != newA)
+		if(m_a != newA) {
 			m_a = newA;
 			emit aChanged();
+		}
 	}
 	QList<QObject*> HelloWorld::model() {
 		return m_model;
 	}
 	void HelloWorld::setModel(QList<QObject*> newModel){
-		if(m_model != newModel)
+		if(m_model != newModel) {
 			m_model = newModel;
 			emit modelChanged();
+		}
 	}
+
 
 	
 ### Q\_STEROID\_DEBUG

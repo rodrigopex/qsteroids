@@ -37,7 +37,7 @@ class Property:
     
     def gen_write_method_implementation(self):
         signal = "        emit {0}Changed();\n".format(self.__name)
-        return "void {0}::set{3}({2} new{3}){{\n    if(m_{1} != new{3})\n        m_{1} = new{3};\n{4}}}\n".format(self.__class_name, self.__name, self.__type, self.__name.title(), signal if self.__has_notify else "")
+        return "void {0}::set{3}({2} new{3}){{\n    if(m_{1} != new{3}) {{\n        m_{1} = new{3};\n{4}    }}\n}}\n".format(self.__class_name, self.__name, self.__type, self.__name.title(), signal if self.__has_notify else "")
 
     def extract_qsteroid_property_information(self, line_content):
         property_search = re.search('Q_STEROID_PROPERTY\((.*)\)', line_content, re.IGNORECASE)
